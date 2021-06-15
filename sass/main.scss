@@ -1,0 +1,9 @@
+html {
+  font-size: 10px;
+}
+body {
+  background: #000;
+}
+@import "./utils/utils";
+@import "./layout/header";
+@import "./layout/hero";

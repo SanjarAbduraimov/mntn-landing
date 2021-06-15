@@ -1,0 +1,8 @@
+#hero {
+  color: $white;
+  text-align: center;
+
+  @include respond(laptop) {
+    color: green;
+  } ;
+}

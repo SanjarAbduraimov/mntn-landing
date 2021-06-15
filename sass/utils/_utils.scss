@@ -1,0 +1,48 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../../assets/fonts/Roboto-Regular.ttf);
+}
+body {
+  font-family: Roboto;
+}
+@import "veribles";
+@import "mixin";
+@for $i from 0 through 5 {
+  .m-#{$i} {
+    margin: $i * 5px;
+  }
+}
+
+@for $i from 0 through 5 {
+  .ms-#{$i} {
+    margin-left: $i * 5px;
+  }
+}
+@for $i from 0 through 5 {
+  .me-#{$i} {
+    margin-right: $i * 5px;
+  }
+}
+@for $i from 0 through 5 {
+  .me-#{$i} {
+    margin-right: $i * 5px;
+  }
+}
+
+@for $size from 1 through 6 {
+  .fs {
+    font-size: $size * 10px;
+  }
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+@import "grid";
+
